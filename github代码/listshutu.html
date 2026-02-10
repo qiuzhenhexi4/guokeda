@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国科大记忆 - 列表页</title>
+    <link rel="icon" href="images/icotu.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icotu.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/secondary.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body class="secondary-page">
+    <!-- 第一部分 -->
+    <section class="section-1 secondary-section-1">
+        <!-- 左侧导航 - 固定显示 -->
+        <aside class="left-nav secondary-left-nav">
+            <!-- Logo -->
+            <div class="logo secondary-logo">
+                <a href="index.html"><img src="images/logo.png" alt="国科大记忆" class="logo-desktop secondary-logo-img"></a>
+                <a href="index.html"><img src="images/logo2.png" alt="国科大记忆" class="logo-mobile"></a>
+            </div>
+
+            <!-- 汉堡菜单按钮 -->
+            <button class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 导航菜单 -->
+            <nav class="nav-menu secondary-nav-menu">
+                <!-- 搜索和投稿按钮 -->
+                <div class="menu-search-box">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索">
+                        <button class="search-btn">
+                            <img src="images/search.png" alt="搜索图标" class="search-icon">
+                        </button>
+                    </div>
+                    <a href="#" class="submit-btn">投稿</a>
+                </div>
+                <ul>
+                    <li><a href="list.html">专题</a></li>
+                    <li><a href="list.html">国科大光影</a></li>
+                    <li><a href="list.html">国科大影像</a></li>
+                    <li><a href="list.html">国科大之声</a></li>
+                    <li><a href="listshutu.html">国科大校报</a></li>
+                    <li><a href="listshutu.html">国科大期刊</a></li>
+                    <li><a href="#calendar-section" id="calendar-link">国科大日历</a></li>
+                </ul>
+            </nav>
+
+            <!-- 底部装饰 -->
+            <div class="nav-footer secondary-nav-footer">
+                <div class="decor-block secondary-decor-block"></div>
+            </div>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <div class="secondary-right-content">
+            <!-- 顶部搜索和投稿 - 1400px版心右对齐 -->
+            <div class="secondary-top-bar">
+                <!-- 面包屑导航 -->
+                <div class="secondary-breadcrumb-container">
+                    <div class="secondary-breadcrumb">
+                        <div class="breadcrumb-icon">
+                            <img src="images/erjiyemianbaoxie.png" alt="面包屑图标">
+                        </div>
+                        <div class="breadcrumb-text">
+                            <span class="breadcrumb-home"><a href="#">首页</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-1"><a href="#">一级标题</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-2"><a href="#">二级标题</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-3"><a href="#">三级标题</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="secondary-top-content">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button class="search-btn">
+                            <img src="images/search.png" alt="搜索图标" class="search-icon">
+                        </button>
+                    </div>
+                    <a href="#" class="submit-btn">投稿</a>
+                </div>
+            </div>
+
+            <!-- 单张Banner图片 - 撑满不动 -->
+            <div class="secondary-banner">
+                <img src="images/erjiyebanner.png" alt="二级页Banner" class="secondary-banner-img">
+                <!-- 页面标题 -->
+                <div class="secondary-banner-title-container">
+                    <div class="secondary-banner-title-content">
+                        <div class="banner-title-icon">
+                            <img src="images/erjiyebiaotitubiao.png" alt="标题图标">
+                        </div>
+                        <h1 class="banner-title-text">一级标题</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 二级标题和三级标题导航 -->
+            <div class="secondary-subnav-container">
+                <div class="secondary-subnav-wrapper">
+                    <ul class="secondary-subnav-list">
+                        <!-- 二级标题1 - 带有三级标题 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                            <ul class="secondary-subnav-dropdown">
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题</span>
+                                    </a>
+                                </li>
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题三级标题三级标题</span>
+                                    </a>
+                                </li>
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- 二级标题2 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                        
+                        <!-- 二级标题3 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                        
+                        <!-- 二级标题4 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 内容列表区域 -->
+            <div class="secondary-content-list-container shutu-content-list-container">
+                <div class="secondary-content-list-wrapper shutu-content-list-wrapper">
+                    <div class="shutu-content-list">
+                        <!-- 列表项1 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (1).png" alt="列表图片1">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项2 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (2).png" alt="列表图片2">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项3 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (3).png" alt="列表图片3">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项4 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (4).png" alt="列表图片4">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项5 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (5).png" alt="列表图片5">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项6 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (6).png" alt="列表图片6">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项7 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (7).png" alt="列表图片7">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项8 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (8).png" alt="列表图片8">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项9 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (9).png" alt="列表图片9">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项10 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (1).png" alt="列表图片10">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项11 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (2).png" alt="列表图片11">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项12 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (3).png" alt="列表图片12">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项13 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (4).png" alt="列表图片13">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项14 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (5).png" alt="列表图片14">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                        <!-- 列表项15 -->
+                        <div class="shutu-content-item">
+                            <div class="shutu-item-image">
+                                <img src="images/erjiyelliebiaotupian (6).png" alt="列表图片15">
+                            </div>
+                            <div class="shutu-item-text-container">
+                                <div class="shutu-item-text"><a href="article.html">《校报名称占位字符》</a></div>
+                                <div class="shutu-item-issue">第1111期</div>
+                                <div class="shutu-item-date">（2026年00月00日）</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 分页区域 -->
+                    <div class="secondary-pagination">
+                        <div class="pagination-container">
+                            <!-- 左侧 -->
+                            <div class="pagination-left">
+                                <div class="page-info">
+                                    <span class="total-items">共 000 条</span>
+                                </div>
+                                <div class="page-size-select">
+                                    <span class="page-size-text">每页 0 条</span>
+                                </div>
+                                <div class="page-nav-left">
+                                    <a href="#" class="page-btn first-page">首页</a>
+                                    <a href="#" class="page-btn prev-page">上一页</a>
+                                </div>
+                            </div>
+                            
+                            <!-- 页码 -->
+                            <div class="pagination-numbers">
+                                <a href="#" class="page-number">01</a>
+                                <a href="#" class="page-number">02</a>
+                                <a href="#" class="page-number">03</a>
+                                <a href="#" class="page-number active">04</a>
+                                <a href="#" class="page-number">05</a>
+                            </div>
+                            
+                            <!-- 右侧 -->
+                            <div class="pagination-right">
+                                <div class="page-nav-right">
+                                    <a href="#" class="page-btn next-page">下一页</a>
+                                    <a href="#" class="page-btn last-page">尾页</a>
+                                </div>
+                                <div class="page-jump">
+                                    <span class="jump-text">跳转至</span>
+                                    <div class="jump-input-container">
+                                        <input type="text" class="jump-input" placeholder="00">
+                                        <div class="jump-icon">
+                                            <img src="images/erjiyefenyetubiao.png" alt="分页图标">
+                                        </div>
+                                    </div>
+                                    <span class="jump-text">页</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 底部背景图 -->
+            <div class="secondary-section-1-bg"></div>
+        </div>
+    </section>
+
+    <!-- 第三部分页脚 -->
+    <section class="section-3 footer-section">
+        <!-- 背景图 -->
+        <div class="footer-bg"></div>
+        
+        <!-- 第一部分 -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <a href="#"><img src="images/ftlogo.png" alt="国科大记忆" class="lazyload"></a>
+                    </div>
+                    
+                    <!-- 回到顶部箭头 -->
+                    <div class="back-to-top">
+                        <a href="javascript:;" class="back-to-top-btn">
+                            <img src="images/jiantou.png" alt="回到顶部" class="lazyload">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第二部分 -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <!-- 左侧：相关链接 -->
+                    <div class="footer-links">
+                        <h3 class="footer-title">相关链接</h3>
+                        <ul class="footer-link-list">
+                            <li><a href="#">政府机构</a></li>
+                            <li><a href="#">科研机构</a></li>
+                            <li><a href="#">高等学校</a></li>
+                            <li><a href="#">国际组织</a></li>
+                            <li><a href="#">新闻媒体</a></li>
+                            <li><a href="#">中国科学院大学图集网</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 中间：联系我们 -->
+                    <div class="footer-contact">
+                        <h3 class="footer-title">联系我们</h3>
+                        <ul class="footer-contact-list">
+                            <li>雁栖湖校区</li>
+                            <li>地址：北京市怀柔区雁栖湖东路1号</li>
+                            <li>邮编：101408</li>
+                            <li>电话：010-69671108</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 国科大日历容器 -->
+    <div id="calendar-section" class="calendar-container">
+        <div class="calendar-wrapper">
+            <div class="calendar-content">
+                <a href="https://mp.weixin.qq.com/s/78UNix02DTgU_mrzZs2hLQ" target="_blank">
+                    <img src="images/3.png" alt="国科大日历" class="calendar-image">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+
+</html>
