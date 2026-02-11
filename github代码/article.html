@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国科大记忆 - 文章页</title>
+    <link rel="icon" href="images/icotu.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icotu.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/secondary.css">
+    <link rel="stylesheet" href="css/new-article.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body class="secondary-page">
+    <!-- 第一部分 -->
+    <section class="section-1 secondary-section-1">
+        <!-- 左侧导航 - 固定显示 -->
+        <aside class="left-nav secondary-left-nav">
+            <!-- Logo -->
+            <div class="logo secondary-logo">
+                <a href="index.html"><img src="images/logo.png" alt="国科大记忆" class="logo-desktop secondary-logo-img"></a>
+                <a href="index.html"><img src="images/logo2.png" alt="国科大记忆" class="logo-mobile"></a>
+            </div>
+
+            <!-- 汉堡菜单按钮 -->
+            <button class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- 导航菜单 -->
+            <nav class="nav-menu secondary-nav-menu">
+                <!-- 搜索和投稿按钮 -->
+                <div class="menu-search-box">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索">
+                        <button class="search-btn">
+                            <img src="images/search.png" alt="搜索图标" class="search-icon">
+                        </button>
+                    </div>
+                    <a href="#" class="submit-btn">投稿</a>
+                </div>
+                <ul>
+                    <li><a href="list.html">专题</a></li>
+                    <li><a href="list.html">国科大光影</a></li>
+                    <li><a href="list.html">国科大影像</a></li>
+                    <li><a href="list.html">国科大之声</a></li>
+                    <li><a href="listshutu.html">国科大校报</a></li>
+                    <li><a href="listshutu.html">国科大期刊</a></li>
+                    <li><a href="#calendar-section" id="calendar-link">国科大日历</a></li>
+                </ul>
+            </nav>
+
+            <!-- 底部装饰 -->
+            <div class="nav-footer secondary-nav-footer">
+                <div class="decor-block secondary-decor-block"></div>
+            </div>
+        </aside>
+
+        <!-- 右侧内容区 -->
+        <div class="secondary-right-content">
+            <!-- 顶部搜索和投稿 - 1400px版心右对齐 -->
+            <div class="secondary-top-bar">
+                <!-- 面包屑导航 -->
+                <div class="secondary-breadcrumb-container">
+                    <div class="secondary-breadcrumb">
+                        <div class="breadcrumb-icon">
+                            <img src="images/erjiyemianbaoxie.png" alt="面包屑图标">
+                        </div>
+                        <div class="breadcrumb-text">
+                            <span class="breadcrumb-home"><a href="#">首页</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-1"><a href="#">一级标题</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-2"><a href="#">二级标题</a></span>
+                            <span class="breadcrumb-separator">-</span>
+                            <span class="breadcrumb-level-3"><a href="#">三级标题</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="secondary-top-content">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search">
+                        <button class="search-btn">
+                            <img src="images/search.png" alt="搜索图标" class="search-icon">
+                        </button>
+                    </div>
+                    <a href="#" class="submit-btn">投稿</a>
+                </div>
+            </div>
+
+            <!-- 单张Banner图片 - 撑满不动 -->
+            <div class="secondary-banner">
+                <img src="images/erjiyebanner.png" alt="二级页Banner" class="secondary-banner-img">
+                <!-- 页面标题 -->
+                <div class="secondary-banner-title-container">
+                    <div class="secondary-banner-title-content">
+                        <div class="banner-title-icon">
+                            <img src="images/erjiyebiaotitubiao.png" alt="标题图标">
+                        </div>
+                        <h1 class="banner-title-text">一级标题</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 二级标题和三级标题导航 -->
+            <div class="secondary-subnav-container">
+                <div class="secondary-subnav-wrapper">
+                    <ul class="secondary-subnav-list">
+                        <!-- 二级标题1 - 带有三级标题 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                            <ul class="secondary-subnav-dropdown">
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题</span>
+                                    </a>
+                                </li>
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题三级标题三级标题</span>
+                                    </a>
+                                </li>
+                                <li class="secondary-subnav-level-3">
+                                    <a href="#" class="secondary-subnav-level-3-link">
+                                        <span class="level-3-icon">
+                                            <img src="images/level-3-icon.png" alt="三级标题图标">
+                                        </span>
+                                        <span class="level-3-text">三级标题</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <!-- 二级标题2 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                        
+                        <!-- 二级标题3 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                        
+                        <!-- 二级标题4 -->
+                        <li class="secondary-subnav-item">
+                            <a href="#" class="secondary-subnav-link">二级标题</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 新内容轮播区域 -->
+            <div class="new-article-content-wrapper">
+                <div class="new-article-content">
+                <!-- 标题和上传者信息 -->
+                <div class="new-article-header">
+                    <h1 class="new-article-title">标题占位字符占位字符占位字符占位字符</h1>
+                    <div class="new-article-meta">上传者：代用名____来源：占位字符占位字符____作者：占位字符占位字符</div>
+                    <div class="new-article-divider"></div>
+                </div>
+                
+                <!-- 轮播区域 -->
+                <div class="new-article-swiper-container">
+                    <div class="new-article-swiper-wrapper">
+                        <!-- 轮播项1 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (1).png" alt="轮播图片1">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <!-- <div class="new-article-divider-right-3"></div> -->
+                                    <div class="new-article-description">
+                                        中国科学院大学简称“国科大”，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办“中国科学院研究生院”。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项2 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (2).png" alt="轮播图片2">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <!-- <div class="new-article-divider-right-3"></div> -->
+                                    <div class="new-article-description">
+                                        中国科学院大学简称“国科大”，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办“中国科学院研究生院”。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项3 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (3).png" alt="轮播图片3">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <!-- <div class="new-article-divider-right-3"></div> -->
+                                    <div class="new-article-description">
+                                        中国科学院大学简称“国科大”，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办“中国科学院研究生院”。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项4 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (4).png" alt="轮播图片4">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <div class="new-article-description">
+                                        中国科学院大学简称"国科大"，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办"中国科学院研究生院"。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项5 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (5).png" alt="轮播图片5">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <div class="new-article-description">
+                                        中国科学院大学简称"国科大"，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办"中国科学院研究生院"。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项6 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (6).png" alt="轮播图片6">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <div class="new-article-description">
+                                        中国科学院大学简称"国科大"，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办"中国科学院研究生院"。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播项7 -->
+                        <div class="new-article-swiper-slide">
+                            <div class="new-article-slide-content">
+                                <div class="new-article-text-bg"></div>
+                                <div class="new-article-image-wrapper">
+                                    <div class="new-article-image">
+                                        <img src="images/wenzhangyetupian (7).png" alt="轮播图片7">
+                                    </div>
+                                    <div class="new-article-play-btn">
+                                        <img src="images/wenzhangyebofang.png" alt="播放按钮" class="play-icon">
+                                    </div>
+                                </div>
+                                <div class="new-article-right-content">
+                                    <div class="new-article-right-bg"></div>
+                                    <div class="new-article-video-info">
+                                        <div class="new-article-video-info-left">
+                                            <div class="new-article-video-item">视频大小:520.5MB</div>
+                                            <div class="new-article-video-item">视频分辨率:1920*1080</div>
+                                        </div>
+                                        <div class="new-article-video-info-right">
+                                            <div class="new-article-video-item">视频时长:03:56</div>
+                                            <div class="new-article-video-item">视频格式:mp4</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-1"></div>
+                                    <div class="new-article-tags">
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">占位字符</div>
+                                        </div>
+                                        <div class="tag-item">
+                                            <div class="tag-bg"></div>
+                                            <div class="tag-text">AI</div>
+                                        </div>
+                                    </div>
+                                    <div class="new-article-divider-right-2"></div>
+                                    <div class="new-article-description">
+                                        中国科学院大学简称"国科大"，是一所以科教融合为办学模式、研究生教育为办学主体、精英化本科教育为办学特色的创新型大学。国科大的研究生教育，发端于中国科学院的人才培养。1950 年，中国科学院启动研究实习员的招考和培养工作。1951年6月，中国科学院与中央教育部联合发布《中国科学院所属研究机构、中央教育部所属高等学校研究部一九五一年暑期招收研究实习员、研究生办法》。1955年8月，《中国科学院研究生暂行条例》由周恩来总理签发后颁布实施。1964年9月，中国科学院在北京试办"中国科学院研究生院"。
+                                    </div>
+                                    <div class="new-article-line-dot">
+                                        <div class="line-icon-wrapper">
+                                            <img src="images/wenzhangyetubiao.png" alt="文章页图标" class="line-icon">
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 缩略图箭头容器 -->
+                <div class="new-article-thumbs-arrows-wrapper">
+                    <!-- 左箭头 -->
+                    <div class="new-article-thumb-arrow-left">
+                        <div class="new-article-thumb-arrow-wrapper">
+                            <img src="images/wenzhangyejiantou.png" alt="左箭头" class="new-article-thumb-arrow-icon">
+                        </div>
+                    </div>
+                    
+                    <!-- 右箭头 -->
+                    <div class="new-article-thumb-arrow-right">
+                        <div class="new-article-thumb-arrow-wrapper">
+                            <img src="images/wenzhangyejiantou.png" alt="右箭头" class="new-article-thumb-arrow-icon">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 预览缩略图区域 -->
+                <div class="new-article-thumbs-container">
+                    <!-- Swiper wrapper -->
+                    <div class="new-article-thumbs-wrapper">
+                        <!-- 缩略图1 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (1).png" alt="缩略图1">
+                        </div>
+                        <!-- 缩略图2 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (2).png" alt="缩略图2">
+                        </div>
+                        <!-- 缩略图3 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (3).png" alt="缩略图3">
+                        </div>
+                        <!-- 缩略图4 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (4).png" alt="缩略图4">
+                        </div>
+                        <!-- 缩略图5 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (5).png" alt="缩略图5">
+                        </div>
+                        <!-- 缩略图6 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (6).png" alt="缩略图6">
+                        </div>
+                        <!-- 缩略图7 -->
+                        <div class="new-article-thumb-item">
+                            <img src="images/wenzhangyetupian (7).png" alt="缩略图7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部背景图 -->
+        <div class="secondary-section-1-bg"></div>
+    </section>
+
+    <!-- 第三部分页脚 -->
+    <section class="section-3 footer-section">
+        <!-- 背景图 -->
+        <div class="footer-bg"></div>
+        
+        <!-- 第一部分 -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top-content">
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <a href="#"><img src="images/ftlogo.png" alt="国科大记忆" class="lazyload"></a>
+                    </div>
+                    
+                    <!-- 回到顶部箭头 -->
+                    <div class="back-to-top">
+                        <a href="javascript:;" class="back-to-top-btn">
+                            <img src="images/jiantou.png" alt="回到顶部" class="lazyload">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 第二部分 -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <!-- 左侧：相关链接 -->
+                    <div class="footer-links">
+                        <h3 class="footer-title">相关链接</h3>
+                        <ul class="footer-link-list">
+                            <li><a href="#">政府机构</a></li>
+                            <li><a href="#">科研机构</a></li>
+                            <li><a href="#">高等学校</a></li>
+                            <li><a href="#">国际组织</a></li>
+                            <li><a href="#">新闻媒体</a></li>
+                            <li><a href="#">中国科学院大学图集网</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 中间：联系我们 -->
+                    <div class="footer-contact">
+                        <h3 class="footer-title">联系我们</h3>
+                        <ul class="footer-contact-list">
+                            <li>雁栖湖校区</li>
+                            <li>地址：北京市怀柔区雁栖湖东路1号</li>
+                            <li>邮编：101408</li>
+                            <li>电话：010-69671108</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 国科大日历容器 -->
+    <div id="calendar-section" class="calendar-container">
+        <div class="calendar-wrapper">
+            <div class="calendar-content">
+                <a href="https://mp.weixin.qq.com/s/78UNix02DTgU_mrzZs2hLQ" target="_blank">
+                    <img src="images/3.png" alt="国科大日历" class="calendar-image">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+    <script>
+        // 核心：等待DOM加载完成后再初始化swiper，避免实例未定义
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. 检查主轮播容器是否存在
+            const mainContainer = document.querySelector('.new-article-swiper-container');
+            if (!mainContainer) {
+                console.error('主轮播容器未找到，请检查HTML结构');
+                return;
+            }
+            
+            // 2. 检查缩略图容器是否存在
+            const thumbsContainer = document.querySelector('.new-article-thumbs-wrapper');
+            if (!thumbsContainer) {
+                console.error('缩略图容器未找到，请检查HTML结构');
+                return;
+            }
+            
+            // 3. 初始化缩略图轮播（先初始化缩略图，因为主轮播需要引用它）
+            var thumbsSwiper = new Swiper('.new-article-thumbs-container', {
+                slidesPerView: 7,
+                spaceBetween: 10,
+                loop: false,
+                centeredSlides: false,
+                wrapperClass: 'new-article-thumbs-wrapper',
+                slideClass: 'new-article-thumb-item',
+                slideActiveClass: 'active',
+                watchSlidesProgress: true,
+                watchSlidesVisibility: true
+            });
+            
+            // 4. 初始化主轮播（使用thumbs功能连接缩略图）
+            var mainSwiper = new Swiper('.new-article-swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                wrapperClass: 'new-article-swiper-wrapper',
+                slideClass: 'new-article-swiper-slide',
+                thumbs: {
+                    swiper: thumbsSwiper,
+                    slideThumbActiveClass: 'active',
+                    thumbsContainerClass: 'new-article-thumbs-wrapper'
+                },
+                on: {
+                    slideChange: function() {
+                        updateThumbsActive();
+                    }
+                }
+            });
+            
+            // 5. 手动更新缩略图active状态的函数
+            function updateThumbsActive() {
+                if (!mainSwiper || typeof mainSwiper.activeIndex === 'undefined') {
+                    return;
+                }
+                
+                var activeIndex = mainSwiper.activeIndex;
+                var thumbs = document.querySelectorAll('.new-article-thumb-item');
+                
+                thumbs.forEach(function(thumb, index) {
+                    if (index === activeIndex) {
+                        thumb.classList.add('active');
+                    } else {
+                        thumb.classList.remove('active');
+                    }
+                });
+            }
+            
+            // 6. 缩略图箭头点击事件（控制主轮播）
+            document.querySelector('.new-article-thumb-arrow-left').addEventListener('click', function() {
+                if (mainSwiper) {
+                    mainSwiper.slidePrev();
+                }
+            });
+            
+            document.querySelector('.new-article-thumb-arrow-right').addEventListener('click', function() {
+                if (mainSwiper) {
+                    mainSwiper.slideNext();
+                }
+            });
+            
+            // 7. 初始化完成
+            console.log('轮播初始化完成');
+        });
+    </script>
+</body>
+
+</html>
